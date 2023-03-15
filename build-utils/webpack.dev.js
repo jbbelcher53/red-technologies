@@ -6,6 +6,12 @@ const path = require('path')
 module.exports = {
   mode: 'development',
   devtool: 'eval-source-map',
+  output: {
+    path: path.resolve(__dirname, '../dist'),
+    filename: '[name].bundle.js',
+    publicPath: '/',
+    clean: true,
+  },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     port: 3001,

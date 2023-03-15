@@ -6,6 +6,12 @@ const path = require('path')
 module.exports = {
   mode: 'production',
   devtool: false,
+  output: {
+    path: path.resolve(__dirname, '../public'),
+    filename: '[name].bundle.js',
+    publicPath: '/',
+    clean: true,
+  },
   optimization: {
     minimize: true,
     minimizer: [

@@ -22,7 +22,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new Dotenv({ path: path.resolve(__dirname, '../.env.production') }),
+    new Dotenv({
+      systemvars: true,
+      // path: path.resolve(__dirname, '../.env.production'),
+    }),
     new MiniCssExtractPlugin(),
   ],
   performance: {

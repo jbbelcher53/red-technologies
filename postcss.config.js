@@ -1,7 +1,14 @@
 module.exports = {
-  plugins: [
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
+  plugins: {
+    'postcss-import': {},
+    tailwindcss: {
+      content: [
+        './src/**/*.tsx',
+        './src/**/*.ts',
+        './src/**/*.jsx',
+        './src/**/*.js',
+      ],
+    },
+    autoprefixer: {},
+  },
 }

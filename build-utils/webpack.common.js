@@ -81,7 +81,7 @@ module.exports = {
     //   ],
     // }),
     new HtmlWebpackPlugin({
-      title: 'Clearmix',
+      title: 'Red-Technologies',
       template: './src/index.html',
       favicon: './src/favicon.ico',
     }),

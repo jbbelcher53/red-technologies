@@ -8,13 +8,15 @@
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"
   ],
   "env": {
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "parserOptions": {
     "ecmaVersion": 2021,
@@ -25,7 +27,7 @@
     },
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "import", "prettier", "react-hooks",  "@typescript-eslint"],
+  "plugins": ["react", "import", "prettier", "react-hooks",  "@typescript-eslint", "jest"],
   "rules": {
     "react/jsx-uses-vars": "error" ,
     "import/no-extraneous-dependencies": "off",
@@ -41,6 +43,7 @@
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/jsx-props-no-spreading": "off",
     "react/jsx-no-bind": "error",
+    "react/require-default-props": "off",
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
     "react/jsx-uses-react": "error",

@@ -9,3 +9,4 @@ This repository is for red technologies interview
 - Tailwindcss
 - Jest/React Testing Library
 - Radix UI
+- Automatic workflows using Github Action

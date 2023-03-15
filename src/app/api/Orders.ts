@@ -3,7 +3,7 @@
 import { Order } from '../types'
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const apiKey: string = process.env.REACT_APP_API_KEY!
+const apiKey: string = process.env.REACT_APP_API_KEY! || process.env.API_KEY!
 
 export const getOrders = async (): Promise<Order[] | undefined> => {
   const response = await fetch(

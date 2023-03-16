@@ -30,6 +30,7 @@ const SelectItem = React.forwardRef(
       <RadixSelect.Item
         className='text-[13px] cursor-pointer leading-none text-gray-700 rounded-[3px] flex items-center h-[25px] pr-[35px] pl-[25px] relative RadixSelect-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:outline-none data-[highlighted]:bg-gray-200 data-[highlighted]:text-gray-900'
         value={value}
+        data-testid='select-item'
         {...props}
         ref={forwardedRef as Ref<HTMLDivElement>}
       >
@@ -55,6 +56,7 @@ export const Select: React.FC<ISelect & SelectProps> = ({
         <RadixSelect.Trigger
           className='inline-flex border w-40 sm:w-48 border-gray-300 items-center justify-between rounded px-[15px] text-[13px] leading-none h-[32px] gap-[5px] bg-white text-gray-700 shadow-[0_2px_10px] shadow-black/10 hover:bg-gray-10 hover:border-gray-400 data-[placeholder]:text-gray-500 outline-none'
           aria-label='Order Type'
+          data-testid='select'
         >
           <RadixSelect.Value placeholder={placeholder} />
           <RadixSelect.Icon className='text-gray-500'>
